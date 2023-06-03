@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;  
+}
+.navbar{
+    background-color: rgba(9, 3, 27, 0.973);
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+ 
+  a{
+      text-decoration: none;
+      color: inherit;
+      float: left;
+      padding: 20px;/* spacing from corner*/    
+  }
+  .navbar li{
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-size: medium;
+    transition: all 0.1s ease-in-out;
+    list-style-type: none;
+    float: right;
+  }
+ 
+  .navbar li:hover{ /* selector is used when mouse is over them*/
+    transform: scale(1.03);
+    color: coral;
+  }
+  .navbar .logo{
+    text-decoration: none;
+    color: coral;
+    font-size: 75px;
+    font-weight: 900;
+    font-style: <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">;
+    font-family: font-family: 'Poppins', sans-serif;
+    padding: 30px;
+    }
+    html{
+      box-sizing: border-box;
+      font-size: 60%;
+    }
+    body{
+      font-family: 'Roboto', sans-serif;
+      background-color: #e1e1e1;
+    }
+    .Books{
+      font-family: 'Roboto', sans-serif;
+      background-color: #e1e1e1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin-top: 10vh;
+    }
+    .grid{
+      display: grid;
+      width: 114em;
+      grid-gap: 6rem;
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      align-items: start;
+    }
+    .grid-item{
+      background-color: bisque;
+      border-radius: 0.4rem;
+      overflow: hidden;
+      box-shadow: 0.3rem 0.8rem rgba(9, 3, 27, 0.973);
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .grid-item:hover{
+      transform: translateY(-0.5%);
+      box-shadow: 0 4rem 8rem rgba(0,0,0,0.5);
+      background-color: coral;
+    }
+    .card-img{
+      display: block;
+      width: 100%;
+      height: 20rem;
+      object-fit: cover;
+    }
+    .cardcontent{
+      padding: 3rem;
+    }
+    .cheader{
+      font-weight: 1000;
+    }
